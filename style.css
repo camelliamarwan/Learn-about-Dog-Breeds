@@ -1,0 +1,127 @@
+body {
+  background-color: #f5f2e8;
+  
+}
+
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #23439F;
+  padding: 3px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.img-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+strong{
+  color: #23439F;
+
+}
+
+
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.circle-label {
+  font-size: 0.75rem;
+  color: #444;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.card {
+  border: 2px solid #e3e8ff;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease, border .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+  border-color: #23439F;
+}
+
+
+.btn {
+  background-color: #23439F;
+  border-radius: 30px;
+  padding: 6px 18px;
+  font-size: 0.9rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+.section-heading {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #23439F;
+  border-left: 5px solid #23439F;
+  padding-left: 12px;
+}
+
+
+.divider-arrow {
+  position: relative;
+  border-top: 2px solid #d4d9ff;
+  margin: 2rem 0;
+}
+
+.divider-arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 14px solid #23439F;
+}
+
+
+img.rounded {
+  border: 3px solid #8596e0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform .3s ease, border .3s ease;
+}
+
+img.rounded:hover {
+  transform: scale(1.02);
+  border-color: #23439F;
+}
+
+.bookmark-icon{
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+
+@media (max-width: 991px) {
+  .bookmark-icon{
+    top: -25px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .bookmark-icon{
+    display:none;
+  }
+}
